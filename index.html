@@ -7,6 +7,7 @@
     <title>Агенство недвижимости</title>
 
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
@@ -29,7 +30,9 @@
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li>
+                <a id="menu-close" style="text-indent:0" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            </li>
             <li class="sidebar-brand">
                 <button class="btn-link" onclick = "$('#menu-close').click(); window.location='#top'">Агентство</button>
             </li>
@@ -154,7 +157,7 @@
             <div style="margin-top: 1cm; margin-bottom: 1cm;">
               <h2>Наш офис</h2>
             </div>
-            <img src="img/office_place.jpg" width="600" class="img-rounded center-block">
+            <img src="img/office_place.jpg" alt="office building street view" width="600" class="img-rounded center-block">
           </div>
         </div>
       </div>
@@ -199,7 +202,7 @@
     <!-- Custom Theme JavaScript -->
     <script type="text/javascript">
     // Closes the sidebar menu
-      $("#menu-close").click(function(a){a.preventDefault(),$("#sidebar-wrapper").toggleClass("active")}),$("#menu-toggle").click(function(a){a.preventDefault(),$("#sidebar-wrapper").toggleClass("active")}),$(function(){$("a[href*=#]:not([href=#])").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")||location.hostname==this.hostname){var a=$(this.hash);if(a=a.length?a:$("[name="+this.hash.slice(1)+"]"),a.length)return $("html,body").animate({scrollTop:a.offset().top},1e3),!1}})});
+      $("#menu-close").click(function(a){a.preventDefault(),$("#sidebar-wrapper").toggleClass("active")}),$("#menu-toggle").click(function(a){a.preventDefault(),$("#sidebar-wrapper").toggleClass("active")}),$(function(){$("a[href*=\\#]:not([href=\\#])").click(function(){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")||location.hostname==this.hostname){var a=$(this.hash);if(a=a.length?a:$("[name="+this.hash.slice(1)+"]"),a.length)return $("html,body").animate({scrollTop:a.offset().top},1e3),!1}})});
     </script>
 
 </body>
